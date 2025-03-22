@@ -14,9 +14,17 @@ theme = "PaperMod"
   subtitle = "Bioinformatician"
   imageUrl = "photo.png"
   imageTitle = "Your image title"
-  imageWidth = 200
+  imageWidth = 250
   imageHeight = 250
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/bibymaths"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/bibymaths"
+
+[[params.socialIcons]]
+  name = "Email"
+  url = "mailto:mishraabhinav36@gmail.com"
