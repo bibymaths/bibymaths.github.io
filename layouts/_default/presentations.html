@@ -9,9 +9,8 @@
       {{ range $files }}
         {{ $name := .Name }}
         {{ $ext := lower (delimit (last 1 (split .Name ".")) "") }}
-        {{ $base := replaceRE \"\\..+$\" \"\" $name }}
-        {{ $title := replace $base \"-\" \" \" | title }}
-
+        {{ $base := replaceRE "\\..+$" "" $name }}
+        {{ $title := replace $base "-" " " | title }}
         <div style="text-align: center; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
           <h3>{{ $title }}</h3>
 
