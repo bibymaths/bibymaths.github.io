@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p>{{ .Content }}</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+  {{ $files := readDir "static/images/gallery" }}
+  {{ range $files }}
+    <div>
+      <img src="/images/gallery/{{ .Name }}" alt="{{ .Name }}" style="width:100%; border-radius: 8px;" loading="lazy" />
+    </div>
+  {{ end }}
+</div>
+{{ end }}

@@ -14,8 +14,7 @@ theme = "PaperMod"
 
 [params.profileMode]
   enabled = true
-  title = "Abhinav Mishra"
-  subtitle = "Bioinformatician by training, Mathematician by eyes"
+  title = "Bioinformatician by training, Mathematician by eyes"
   imageUrl = "photo.png"
   imageTitle = "Abhinav Mishra"
   imageWidth = 250
@@ -58,6 +57,11 @@ theme = "PaperMod"
     name = "CV"
     url = "/cv/"
     weight = 4
+
+  [[menu.main]]
+    name = "Photography"
+    url = "/gallery/"
+    weight = 6
 
   [[menu.main]]
     name = "Contact"
