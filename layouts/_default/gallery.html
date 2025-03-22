@@ -12,18 +12,22 @@
 </div>
 {{ end }}
 -->
+{{ partial "header.html" . }}
+<main class="main single" id="main">
+  <div class="content">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
 
-<h1>{{ .Title }}</h1>
-<p>{{ .Content }}</p>
-
-<div id="lightgallery" class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-  {{ $files := readDir "static/images/gallery" }}
-  {{ range $files }}
-    <a href="/images/gallery/{{ .Name }}" data-lg-size="1400-933" class="gallery-item">
-      <img src="/images/gallery/{{ .Name }}" alt="{{ .Name }}" style="width:100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" loading="lazy" />
-    </a>
-  {{ end }}
-</div>
+    <div id="lightgallery" class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+      {{ $files := readDir "static/images/gallery" }}
+      {{ range $files }}
+        <a href="/images/gallery/{{ .Name }}" data-lg-size="1400-933" class="gallery-item">
+          <img src="/images/gallery/{{ .Name }}" alt="{{ .Name }}" style="width:100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" loading="lazy" />
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</main>
 
 <!-- LightGallery CSS/JS -->
 <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" rel="stylesheet">
@@ -37,3 +41,6 @@
     mode: 'lg-fade',
   });
 </script>
+
+{{ partial "footer.html" . }}
+
