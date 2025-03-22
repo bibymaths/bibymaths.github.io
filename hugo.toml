@@ -16,7 +16,7 @@ theme = "PaperMod"
   ShowWordCount = true
 
 [params.profileMode]
-  enabled = false
+  enabled = true
   subtitle = "Bioinformatician who loves mathematics"
   imageUrl = "photo.png"
   imageTitle = "Abhinav Mishra"
@@ -40,11 +40,6 @@ theme = "PaperMod"
   email = "mishraabhinav36@gmail.com"
 
 [menu]
-
-  [[menu.main]]
-    name = "Search"
-    url = "/search/"
-    weight = 1
 
   [[menu.main]]
     name = "About"
