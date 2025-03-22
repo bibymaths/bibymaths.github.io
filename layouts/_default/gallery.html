@@ -1,4 +1,4 @@
-{{ define "main" }}
+<!--{{ define "main" }}
 <h1>{{ .Title }}</h1>
 <p>{{ .Content }}</p>
 
@@ -10,4 +10,33 @@
     </div>
   {{ end }}
 </div>
+{{ end }}
+-->
+
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p>{{ .Content }}</p>
+
+<!-- LightGallery container -->
+<div id="lightgallery" class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+  {{ $files := readDir "static/images/gallery" }}
+  {{ range $files }}
+    <a href="/images/gallery/{{ .Name }}" data-lg-size="1400-933" class="gallery-item">
+      <img src="/images/gallery/{{ .Name }}" alt="{{ .Name }}" style="width:100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" loading="lazy" />
+    </a>
+  {{ end }}
+</div>
+
+<!-- Include LightGallery JS and CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+
+<script>
+  lightGallery(document.getElementById('lightgallery'), {
+    plugins: [lgZoom],
+    speed: 500,
+    mode: 'lg-fade',
+  });
+</script>
 {{ end }}
