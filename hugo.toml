@@ -16,7 +16,7 @@ theme = "PaperMod"
   ShowWordCount = true
 
 [params.profileMode]
-  enabled = true
+  enabled = false
   subtitle = "Bioinformatician who loves mathematics"
   imageUrl = "photo.png"
   imageTitle = "Abhinav Mishra"

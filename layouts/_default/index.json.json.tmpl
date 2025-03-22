@@ -1,12 +1,5 @@
-{{- $pages := where .Site.RegularPages "Params.private" "ne" true -}}
-[
-{{- range $i, $p := $pages }}
-  {{- if gt $i 0 }},{{ end }}
-  {
-    "title": {{ $p.Title | jsonify }},
-    "permalink": {{ $p.Permalink | jsonify }},
-    "content": {{ $p.Plain | jsonify }},
-    "summary": {{ $p.Summary | jsonify }}
-  }
-{{- end }}
-]
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+  {{- $.Scratch.Add "index" (dict "title" .Title "permalink" .Permalink "summary" .Summary "content" .Plain) -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
