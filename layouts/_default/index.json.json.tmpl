@@ -1,4 +1,4 @@
-{{- $pages := .Site.RegularPages -},}
+{{- $pages := where .Site.RegularPages "Params.private" "ne" true -}}
 [
 {{- range $i, $p := $pages }}
   {{- if gt $i 0 }},{{ end }}
