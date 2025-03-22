@@ -72,3 +72,8 @@ theme = "PaperMod"
     name = "Contact"
     url = "/contact/"
     weight = 8
+
+  [[menu.main]]
+    name = "BioBaes"
+    url = "/biobaes/"
+    weight = 9
