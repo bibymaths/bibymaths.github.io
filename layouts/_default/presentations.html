@@ -1,30 +1,26 @@
-{{ partial "header.html" . }}
-<main class="main single" id="main">
-  <div class="content">
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Content }}</p>
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p>{{ .Content }}</p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-      {{ $files := readDir "static/presentations" }}
-      {{ range $files }}
-        {{ $name := .Name }}
-        {{ $ext := lower (delimit (last 1 (split .Name ".")) "") }}
-        {{ $base := replaceRE "\\..+$" "" $name }}
-        {{ $title := replace $base "-" " " | title }}
-        <div style="text-align: center; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-          <h3>{{ $title }}</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+  {{ $files := readDir "static/presentations" }}
+  {{ range $files }}
+    {{ $name := .Name }}
+    {{ $ext := lower (delimit (last 1 (split .Name ".")) "") }}
+    {{ $base := replaceRE "\\..+$" "" $name }}
+    {{ $title := replace $base "-" " " | title }}
+    <div style="text-align: center; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
+      <h3>{{ $title }}</h3>
 
-          {{ if eq $ext "pdf" }}
-            <embed src="/presentations/{{ $name }}#toolbar=0" type="application/pdf" width="100%" height="400px" style="border-radius: 6px;" />
-            <p><a href="/presentations/{{ $name }}" download>📥 Download PDF</a></p>
-          {{ else if eq $ext "pptx" }}
-            <p>📊 <a href="/presentations/{{ $name }}" download>Download Presentation</a></p>
-          {{ else }}
-            <p>📎 <a href="/presentations/{{ $name }}" download>Download File</a></p>
-          {{ end }}
-        </div>
+      {{ if eq $ext "pdf" }}
+        <embed src="/presentations/{{ $name }}#toolbar=0" type="application/pdf" width="100%" height="400px" style="border-radius: 6px;" />
+        <p><a href="/presentations/{{ $name }}" download>📥 Download PDF</a></p>
+      {{ else if eq $ext "pptx" }}
+        <p>📊 <a href="/presentations/{{ $name }}" download>Download Presentation</a></p>
+      {{ else }}
+        <p>📎 <a href="/presentations/{{ $name }}" download>Download File</a></p>
       {{ end }}
     </div>
-  </div>
-</main>
-{{ partial "footer.html" . }}
+  {{ end }}
+</div>
+{{ end }}
