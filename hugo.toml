@@ -29,6 +29,10 @@ theme = "PaperMod"
   url = "https://www.linkedin.com/in/bibymaths"
 
 [[params.socialIcons]]
+  name = "x"
+  url = "https://x.com/shadytoyou"
+
+[[params.socialIcons]]
   name = "email"
   url = "mailto:mishraabhinav36@gmail.com"
 
