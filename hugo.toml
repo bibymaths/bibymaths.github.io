@@ -19,6 +19,10 @@ theme = "PaperMod"
   imageTitle = "Abhinav Mishra"
   imageWidth = 250
   imageHeight = 250
+  buttons = [
+    { name = "Impressum", url = "/impressum/" },
+    { name = "Datenschutzerklärung", url = "/datenschutz/" }
+  ]
 
 [[params.socialIcons]]
   name = "github"
@@ -35,14 +39,6 @@ theme = "PaperMod"
 [[params.socialIcons]]
   name = "email"
   url = "mailto:mishraabhinav36@gmail.com"
-
-[[params.footer]]
-  displayFooter = true
-  copyright = "© 2025 Abhinav Mishra"
-  links = [
-    { name = "Impressum", url = "/impressum/" },
-    { name = "Datenschutzerklärung", url = "/datenschutz/" }
-  ]
 
 [author]
   name = "Abhinav Mishra"
