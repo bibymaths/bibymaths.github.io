@@ -36,6 +36,14 @@ theme = "PaperMod"
   name = "email"
   url = "mailto:mishraabhinav36@gmail.com"
 
+[params.footer]
+  displayFooter = true
+  copyright = "© 2025 Abhinav Mishra"
+  links = [
+    { name = "Impressum", url = "/impressum/" },
+    { name = "Datenschutzerklärung", url = "/datenschutz/" }
+  ]
+
 [author]
   name = "Abhinav Mishra"
   email = "mishraabhinav36@gmail.com"
