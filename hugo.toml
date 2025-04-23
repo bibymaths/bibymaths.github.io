@@ -1,7 +1,7 @@
 baseURL = "https://bibymaths.github.io"
 languageCode = "en-us"
 title = ""
-theme = "introduction"
+theme = "PaperMod"
 
 [params]
   env = "production"
@@ -13,7 +13,7 @@ theme = "introduction"
   ShowWordCount = true
 
 [params.profileMode]
-  enabled = true
+  enabled = false
   subtitle = "Bioinformatician who loves mathematics"
   imageUrl = "photo.png"
   imageTitle = "Abhinav Mishra"
