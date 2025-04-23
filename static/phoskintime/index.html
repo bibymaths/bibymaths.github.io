@@ -1,0 +1,1539 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="reference/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>PhosKinTime</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.2afb09e1.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#phoskintime-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="PhosKinTime" class="md-header__button md-logo" aria-label="PhosKinTime" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PhosKinTime
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="PhosKinTime" class="md-nav__button md-logo" aria-label="PhosKinTime" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PhosKinTime
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Packages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bin" class="md-nav__link">
+    <span class="md-ellipsis">
+      bin/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    <span class="md-ellipsis">
+      config/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      models/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paramest" class="md-nav__link">
+    <span class="md-ellipsis">
+      paramest/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steady" class="md-nav__link">
+    <span class="md-ellipsis">
+      steady/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      sensitivity/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plotting" class="md-nav__link">
+    <span class="md-ellipsis">
+      plotting/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      utils/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimization-framework-kinopt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization Framework (kinopt)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimization Framework (kinopt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kinoptevol" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/evol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinoptlocal" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/local
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinoptoptimality" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/optimality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinoptpowell" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/powell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinoptfitanalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/fitanalysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimization-framework-tfopt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization Framework (tfopt)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimization Framework (tfopt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#originally-implemented-by-julius-normann" class="md-nav__link">
+    <span class="md-ellipsis">
+      Originally implemented by Julius Normann.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#this-version-has-been-modified-and-optimized-by-abhinav-mishra" class="md-nav__link">
+    <span class="md-ellipsis">
+      This version has been modified and optimized by Abhinav Mishra.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptevol" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/evol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptlocal" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/local
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptobjfn" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/objfn
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptoptcon" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/optcon
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptutils" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/utils
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features at a Glance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-pip-virtualenv-debianubuntufedora" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: pip + virtualenv (Debian/Ubuntu/Fedora)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Option 1: pip + virtualenv (Debian/Ubuntu/Fedora)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-debianubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Debian/Ubuntu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-fedora" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Fedora
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-poetry-pyprojecttoml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Poetry + pyproject.toml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-poetry-all-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Poetry (all platforms)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acknowledgments
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/bin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Main
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/kinopt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kinase Optimization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ODE Models
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/paramest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Parameter Estimation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/plotting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Plotting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/sensitivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sensitivity Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/steady/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Steady State Calculation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/tfopt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transcription Factor Optimization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Documentation/utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Packages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bin" class="md-nav__link">
+    <span class="md-ellipsis">
+      bin/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    <span class="md-ellipsis">
+      config/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      models/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paramest" class="md-nav__link">
+    <span class="md-ellipsis">
+      paramest/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steady" class="md-nav__link">
+    <span class="md-ellipsis">
+      steady/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      sensitivity/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plotting" class="md-nav__link">
+    <span class="md-ellipsis">
+      plotting/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      utils/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimization-framework-kinopt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization Framework (kinopt)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimization Framework (kinopt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kinoptevol" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/evol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinoptlocal" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/local
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinoptoptimality" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/optimality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinoptpowell" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/powell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinoptfitanalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      kinopt/fitanalysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimization-framework-tfopt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimization Framework (tfopt)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimization Framework (tfopt)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#originally-implemented-by-julius-normann" class="md-nav__link">
+    <span class="md-ellipsis">
+      Originally implemented by Julius Normann.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#this-version-has-been-modified-and-optimized-by-abhinav-mishra" class="md-nav__link">
+    <span class="md-ellipsis">
+      This version has been modified and optimized by Abhinav Mishra.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptevol" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/evol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptlocal" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/local
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptobjfn" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/objfn
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptoptcon" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/optcon
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfoptutils" class="md-nav__link">
+    <span class="md-ellipsis">
+      tfopt/utils
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features at a Glance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-pip-virtualenv-debianubuntufedora" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: pip + virtualenv (Debian/Ubuntu/Fedora)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Option 1: pip + virtualenv (Debian/Ubuntu/Fedora)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-debianubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Debian/Ubuntu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-fedora" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Fedora
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-poetry-pyprojecttoml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2: Poetry + pyproject.toml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-poetry-all-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Poetry (all platforms)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acknowledgments
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="phoskintime-documentation">PhosKinTime Documentation<a class="headerlink" href="#phoskintime-documentation" title="Permanent link">&para;</a></h1>
+<p><img src="../images/logo_3.png" alt="Package Logo" width="200"/>    </p>
+<p>Welcome to the official documentation for <strong>PhosKinTime</strong>, an ODE-based modeling toolkit for phosphorylation kinetics and transcriptional time-series analysis. This index page provides an overview of each package and submodule in the project.</p>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>PhosKinTime integrates:</p>
+<ul>
+<li>Parameter estimation (normal and sequential modes)</li>
+<li>Mechanistic ODE models (distributive, successive, random)</li>
+<li>Steady-state computation</li>
+<li>Morris sensitivity analysis</li>
+<li>Static and interactive visualization</li>
+<li>Modular design for extensibility</li>
+</ul>
+<p>PhosKinTime uses ordinary differential equations (ODEs) to model phosphorylation kinetics and supports multiple mechanistic hypotheses, including:
+- <strong>Distributive Model:</strong> Phosphorylation events occur independently.
+- <strong>Successive Model:</strong> Phosphorylation events occur sequentially.
+- <strong>Random Model:</strong> Phosphorylation events occur in a random manner.</p>
+<p>The package is designed with modularity in mind. It consists of several key components:
+- <strong>Configuration:</strong> Centralized settings (paths, parameter bounds, logging, etc.) are defined in the config module.
+- <strong>Models:</strong> Different ODE models (distributive, successive, random) are implemented to simulate phosphorylation.
+- <strong>Parameter Estimation:</strong> Multiple routines (sequential and normal estimation) estimate kinetic parameters from experimental data.
+- <strong>Sensitivity Analysis:</strong> Morris sensitivity analysis is used to evaluate the influence of each parameter on the model output.
+- <strong>Steady-State Calculation:</strong> Functions compute steady-state initial conditions for ODE simulation.
+- <strong>Utilities:</strong> Helper functions support file handling, data formatting, report generation, and more.
+- <strong>Visualization:</strong> A comprehensive plotting module generates static and interactive plots to visualize model fits, parameter profiles, PCA, t-SNE, and sensitivity indices.
+- <strong>Exporting:</strong> The package can export results to Excel and generate HTML reports for easy sharing and documentation. 
+- <strong>CLI Interface:</strong> A command-line interface allows users to run the package without needing to modify the code directly. 
+- <strong>Documentation:</strong> The package includes extensive documentation to help users understand the functionality and usage of each module.
+- <strong>Testing:</strong> The package includes unit tests to ensure the reliability and correctness of the implemented algorithms.
+- <strong>Logging:</strong> A logging system is integrated to track the execution flow and capture important events during the analysis.
+- <strong>Error Handling:</strong> The package includes error handling mechanisms to manage exceptions and provide informative error messages.
+- <strong>Cross-Platform Compatibility:</strong> The package is designed to work on various operating systems, including Windows, macOS, and Linux.
+- <strong>Version Control:</strong> The package is version-controlled using Git, allowing users to track changes and collaborate effectively.
+- <strong>Continuous Integration:</strong> The package is set up with continuous integration (CI) tools to automate testing and ensure code quality.
+- <strong>Documentation Generation:</strong> The package uses tools like Sphinx to generate documentation from docstrings, making it easy to maintain and update the documentation as the code evolves.
+- <strong>Code Quality:</strong> The package follows best practices for code quality, including PEP 8 style guidelines, type hints, and docstrings for functions and classes.</p>
+<hr />
+<h2 id="core-packages">Core Packages<a class="headerlink" href="#core-packages" title="Permanent link">&para;</a></h2>
+<h3 id="bin">bin/<a class="headerlink" href="#bin" title="Permanent link">&para;</a></h3>
+<p>Entry point for the pipeline. Contains <code>main.py</code>, which orchestrates configuration, data loading, parameter estimation, ODE simulation, visualization, and report generation.</p>
+<h3 id="config">config/<a class="headerlink" href="#config" title="Permanent link">&para;</a></h3>
+<p>Holds global constants, CLI parsing, and logging setup:</p>
+<ul>
+<li><code>constants.py</code>: model settings, time points, directories, scoring weights</li>
+<li><code>config.py</code>: argument parsing and configuration extraction</li>
+<li><code>logconf.py</code>: colored console and rotating file logging</li>
+<li><code>helpers/</code>: utilities for parameter names, state labels, bounds, and clickable paths</li>
+</ul>
+<h3 id="models">models/<a class="headerlink" href="#models" title="Permanent link">&para;</a></h3>
+<p>Implements ODE systems for different phosphorylation hypotheses:</p>
+<ul>
+<li><code>distmod.py</code>: distributive model</li>
+<li><code>succmod.py</code>: successive model</li>
+<li><code>randmod.py</code>: random model with JIT optimization</li>
+<li><code>weights.py</code>: weighting schemes for parameter estimation</li>
+</ul>
+<h3 id="paramest">paramest/<a class="headerlink" href="#paramest" title="Permanent link">&para;</a></h3>
+<p>Parameter estimation routines:</p>
+<ul>
+<li><code>seqest.py</code>: sequential (time-point–wise) fitting</li>
+<li><code>normest.py</code>: global fit across all time points</li>
+<li><code>adapest.py</code>: adaptive profile estimation</li>
+<li><code>toggle.py</code>: selects estimation mode</li>
+<li><code>core.py</code>: integrates estimation, ODE solve, error metrics, and plotting</li>
+</ul>
+<h3 id="steady">steady/<a class="headerlink" href="#steady" title="Permanent link">&para;</a></h3>
+<p>Computes steady-state initial conditions for each model:</p>
+<ul>
+<li><code>initdist.py</code>, <code>initsucc.py</code>, <code>initrand.py</code></li>
+</ul>
+<h3 id="sensitivity">sensitivity/<a class="headerlink" href="#sensitivity" title="Permanent link">&para;</a></h3>
+<p>Morris sensitivity analysis:</p>
+<ul>
+<li><code>analysis.py</code>: defines problem, sampling, analysis, and sensitivity plots</li>
+</ul>
+<h3 id="plotting">plotting/<a class="headerlink" href="#plotting" title="Permanent link">&para;</a></h3>
+<p>Visualization tools:</p>
+<ul>
+<li><code>Plotter</code> class with methods for parallel coordinates, PCA, t-SNE, parameter bar and series plots, model fit, GoF diagnostics, Kullback–Leibler divergence, clusters, and heatmaps</li>
+</ul>
+<h3 id="utils">utils/<a class="headerlink" href="#utils" title="Permanent link">&para;</a></h3>
+<p>Helper functions:</p>
+<ul>
+<li><code>display.py</code>: file and directory management, data loading, result saving, report generation</li>
+<li><code>tables.py</code>: table creation and export (LaTeX and CSV)</li>
+</ul>
+<hr />
+<h2 id="optimization-framework-kinopt">Optimization Framework (kinopt)<a class="headerlink" href="#optimization-framework-kinopt" title="Permanent link">&para;</a></h2>
+<p>The <strong>kinopt</strong> package provides advanced optimization and post-processing:</p>
+<h3 id="kinoptevol">kinopt/evol<a class="headerlink" href="#kinoptevol" title="Permanent link">&para;</a></h3>
+<p>Global evolutionary optimization using pymoo (DE, NSGA-II):</p>
+<ul>
+<li>Problem formulation, data construction, exporter for Excel and plots</li>
+</ul>
+<h3 id="kinoptlocal">kinopt/local<a class="headerlink" href="#kinoptlocal" title="Permanent link">&para;</a></h3>
+<p>Local constrained optimization using SciPy solvers (SLSQP, TRUST-CONSTR) with Numba-accelerated objectives</p>
+<h3 id="kinoptoptimality">kinopt/optimality<a class="headerlink" href="#kinoptoptimality" title="Permanent link">&para;</a></h3>
+<p>Post-optimization analysis: feasibility checks, sensitivity reporting, LaTeX table generation, diagnostic plots</p>
+<h3 id="kinoptpowell">kinopt/powell<a class="headerlink" href="#kinoptpowell" title="Permanent link">&para;</a></h3>
+<p>Julia-based Powell optimization bridge: runs <code>powell.jl</code>, configures threads, integrates results into post-processing</p>
+<h3 id="kinoptfitanalysis">kinopt/fitanalysis<a class="headerlink" href="#kinoptfitanalysis" title="Permanent link">&para;</a></h3>
+<p>Additional fit-evaluation utilities for residual and performance analysis</p>
+<hr />
+<h2 id="optimization-framework-tfopt">Optimization Framework (tfopt)<a class="headerlink" href="#optimization-framework-tfopt" title="Permanent link">&para;</a></h2>
+<h6 id="originally-implemented-by-julius-normann">Originally implemented by Julius Normann.<a class="headerlink" href="#originally-implemented-by-julius-normann" title="Permanent link">&para;</a></h6>
+<h6 id="this-version-has-been-modified-and-optimized-by-abhinav-mishra">This version has been modified and optimized by Abhinav Mishra.<a class="headerlink" href="#this-version-has-been-modified-and-optimized-by-abhinav-mishra" title="Permanent link">&para;</a></h6>
+<p>The <strong>tfopt</strong> package estimates transcriptional regulation using mRNA and TF time-series data through constrained optimization.</p>
+<h3 id="tfoptevol">tfopt/evol<a class="headerlink" href="#tfoptevol" title="Permanent link">&para;</a></h3>
+<p>Global evolutionary optimization using pymoo (NSGA-II, AGEMOEA, SMSEMOA):</p>
+<ul>
+<li>Multi-objective loss (fit error, α and β constraint violations)  </li>
+<li>Parallel evaluation, Excel export, and HTML/plot reports</li>
+</ul>
+<h3 id="tfoptlocal">tfopt/local<a class="headerlink" href="#tfoptlocal" title="Permanent link">&para;</a></h3>
+<p>Local constrained optimization using SciPy solvers (SLSQP):</p>
+<ul>
+<li>Fast deterministic optimization under linear constraints  </li>
+<li>Numba-accelerated objectives, identical output and reports as <code>evol</code></li>
+</ul>
+<h3 id="tfoptobjfn">tfopt/objfn<a class="headerlink" href="#tfoptobjfn" title="Permanent link">&para;</a></h3>
+<p>Shared objective logic and prediction functions for both backends</p>
+<h3 id="tfoptoptcon">tfopt/optcon<a class="headerlink" href="#tfoptoptcon" title="Permanent link">&para;</a></h3>
+<p>Data construction and constraint generation from TF–mRNA interaction files</p>
+<h3 id="tfoptutils">tfopt/utils<a class="headerlink" href="#tfoptutils" title="Permanent link">&para;</a></h3>
+<p>Input parsing, Excel + plot output, and HTML report generation</p>
+<hr />
+<h2 id="features-at-a-glance">Features at a Glance<a class="headerlink" href="#features-at-a-glance" title="Permanent link">&para;</a></h2>
+<ul>
+<li>🧬 <strong>Mechanistic ODE Models</strong>: Distributive, successive, and random phosphorylation models.</li>
+<li>🧪 <strong>Parameter Estimation</strong>: Both normal and sequential fitting modes.</li>
+<li>🧠 <strong>Sensitivity Analysis</strong>: Morris method to analyze model response to parameters.</li>
+<li>🧰 <strong>Steady-State Calculations</strong>: Compute initial conditions for all model types.</li>
+<li>📊 <strong>Visualization Tools</strong>: Model fit plots, PCA/t-SNE visualizations, and HTML reports.</li>
+<li>🔁 <strong>Modular Design</strong>: Easy to extend and customize each component.</li>
+</ul>
+<hr />
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<h3 id="option-1-pip-virtualenv-debianubuntufedora">Option 1: pip + virtualenv (Debian/Ubuntu/Fedora)<a class="headerlink" href="#option-1-pip-virtualenv-debianubuntufedora" title="Permanent link">&para;</a></h3>
+<h4 id="for-debianubuntu">For <strong>Debian/Ubuntu</strong><a class="headerlink" href="#for-debianubuntu" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>python3<span class="w"> </span>python3-pip<span class="w"> </span>python3-venv<span class="w"> </span>git
+</code></pre></div>
+<h4 id="for-fedora">For <strong>Fedora</strong><a class="headerlink" href="#for-fedora" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>python3<span class="w"> </span>python3-pip<span class="w"> </span>python3-virtualenv<span class="w"> </span>git
+</code></pre></div>
+<h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:bibymaths/phoskintime.git
+<span class="nb">cd</span><span class="w"> </span>phoskintime
+
+<span class="c1"># Create and activate a virtual environment</span>
+python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+
+<span class="c1"># Install dependencies</span>
+pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+<hr />
+<h3 id="option-2-poetry-pyprojecttoml">Option 2: Poetry + <code>pyproject.toml</code><a class="headerlink" href="#option-2-poetry-pyprojecttoml" title="Permanent link">&para;</a></h3>
+<h3 id="install-poetry-all-platforms">Install Poetry (all platforms)<a class="headerlink" href="#install-poetry-all-platforms" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sSL<span class="w"> </span>https://install.python-poetry.org<span class="w"> </span><span class="p">|</span><span class="w"> </span>python3<span class="w"> </span>-#<span class="w"> </span>Or:<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>poetry
+</code></pre></div>
+<hr />
+<h2 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>bin/</code>: Entry point (<code>main.py</code>) to run the full pipeline.</li>
+<li><code>config/</code>: Constants, CLI parsing, and logging setup.</li>
+<li><code>models/</code>: Distributive, successive, and random ODE systems.</li>
+<li><code>paramest/</code>: Estimation logic (normal, sequential, adaptive).</li>
+<li><code>steady/</code>: Model-specific steady-state calculators.</li>
+<li><code>sensitivity/</code>: Morris sensitivity analysis.</li>
+<li><code>utils/</code>: IO, table generation, and result handling.</li>
+<li><code>plotting/</code>: Visualizations for model fits, sensitivity, PCA, and more.</li>
+</ul>
+<hr />
+<h2 id="acknowledgments">Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permanent link">&para;</a></h2>
+<p>This project originated as part of my master's thesis work at Theoretical Biophysics group (now, <a href="https://www.klipp-linding.science/tbp/index.php/en/">Klipp-Linding Lab</a>), Humboldt Universität zu Berlin.</p>
+<ul>
+<li><strong>Conceptual framework and mathematical modeling</strong> were developed under the supervision of <strong><a href="https://www.klipp-linding.science/tbp/index.php/en/people/51-people/head/52-klipp">Prof. Dr. Dr. H.C. Edda Klipp</a></strong>.</li>
+<li><strong>Experimental datasets</strong> were provided by the <strong><a href="https://www.klipp-linding.science/tbp/index.php/en/people/51-people/head/278-rune-linding">(Retd. Prof.) Dr. Rune Linding</a></strong>.</li>
+<li>The subpackage <code>tfopt</code> is an optimized and efficient derivative of <a href="https://github.com/Normann-BPh/Transcription-Optimization">original work</a> by my colleague <strong><a href="https://github.com/Normann-BPh">Julius Normann</a></strong>, adapted with permission.</li>
+</ul>
+<p>I am especially grateful to <a href="https://rumo.biologie.hu-berlin.de/tbp/index.php/en/people/54-people/6-staff/60-maintz">Ivo Maintz</a> for his generous technical support, enabling seamless experimentation with packages and server setups.</p>
+<ul>
+<li>The package is built on the shoulders of giants, leveraging the power of <a href="https://numpy.org/">NumPy</a>, <a href="https://www.scipy.org/">SciPy</a>, <a href="https://matplotlib.org/">Matplotlib</a>, and <a href="https://pandas.pydata.org/">Pandas</a> for numerical computations and data handling. </li>
+<li>The package also utilizes <a href="https://numba.pydata.org/">Numba</a> for JIT compilation, enhancing performance for computationally intensive tasks.</li>
+<li>The package is designed to be compatible with <a href="https://www.python.org/downloads/">Python 3.8+</a> and is tested on various platforms, including Windows, macOS, and Linux. </li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="js/katex-setup.js"></script>
+      
+    
+  </body>
+</html>
