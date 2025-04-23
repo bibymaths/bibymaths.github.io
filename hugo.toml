@@ -36,7 +36,7 @@ theme = "PaperMod"
   name = "email"
   url = "mailto:mishraabhinav36@gmail.com"
 
-[params.footer]
+[[params.footer]]
   displayFooter = true
   copyright = "© 2025 Abhinav Mishra"
   links = [
