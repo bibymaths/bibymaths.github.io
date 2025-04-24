@@ -23,8 +23,7 @@ theme = "PaperMod"
   imageWidth = 250
   imageHeight = 250
   buttons = [
-    { name = "Impressum", url = "/impressum/" },
-    { name = "Datenschutzerklärung", url = "/datenschutz/" }
+    { name = "Impressum", url = "/impressum/" }
   ]
 
 [params.assets]
