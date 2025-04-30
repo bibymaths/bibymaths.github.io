@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Parameter estimation and optimization for phosphorylation models.">
+        <meta name="description" content="phoskintime - a tool for ODE based parameter estimation and optimization for phosphorylation models.">
       
       
         <meta name="author" content="Abhinav Mishra">
@@ -546,12 +546,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../plotting/" class="md-nav__link">
+      <a href="../paramest/ci/README.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Plotting
+    Confidence Intervals
     
   </span>
   
@@ -763,7 +763,8 @@
 </ul>
 </li>
 <li><strong>Time Points and Directories:</strong>  <ul>
-<li><code>TIME_POINTS</code>: A NumPy array of experimental time points (in minutes) for data fitting.</li>
+<li><code>TIME_POINTS</code>: A NumPy array of time points for phosphorylation. </li>
+<li><code>TIME_POINTS_RNA</code>: A NumPy array of time points for mRNA measurements.</li>
 <li>Directory paths such as <code>PROJECT_ROOT</code>, <code>OUT_DIR</code>, <code>DATA_DIR</code>, <code>INPUT_EXCEL</code>, and <code>LOG_DIR</code>.</li>
 </ul>
 </li>
@@ -808,7 +809,7 @@
 <ul>
 <li>
 <p><strong>Model &amp; Estimation Settings:</strong><br />
-  Adjust <code>ODE_MODEL</code> and <code>ESTIMATION_MODE</code> in <code>constants.py</code> to select different modeling strategies and parameter estimation routines.</p>
+  Adjust <code>ODE_MODEL</code> in <code>constants.py</code> to select different modeling strategies and parameter estimation routines.</p>
 </li>
 <li>
 <p><strong>Parameter Bounds and Fixed Values:</strong><br />

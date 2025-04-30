@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Parameter estimation and optimization for phosphorylation models.">
+        <meta name="description" content="phoskintime - a tool for ODE based parameter estimation and optimization for phosphorylation models.">
       
       
         <meta name="author" content="Abhinav Mishra">
@@ -18,7 +18,7 @@
         <link rel="prev" href="../models/">
       
       
-        <link rel="next" href="../plotting/">
+        <link rel="next" href="../sensitivity/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -555,12 +555,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../plotting/" class="md-nav__link">
+      <a href="ci/README.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Plotting
+    Confidence Intervals
     
   </span>
   
@@ -767,27 +767,16 @@
 
 
 <h1 id="parameter-estimation">Parameter Estimation<a class="headerlink" href="#parameter-estimation" title="Permanent link">&para;</a></h1>
-<p>This module provides the tools needed to estimate parameters for ODE‐based models of phosphorylation dynamics. It implements several estimation approaches and supports bootstrapping, adaptive profile estimation, and toggling between different estimation modes.</p>
+<p>This module provides the tools needed to estimate parameters for ODE‐based models of phosphorylation dynamics.</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>The module is organized into several submodules:</p>
 <ul>
-<li><strong><code>seqest.py</code></strong> – Implements sequential (time-point–wise) parameter estimation. This approach estimates parameters incrementally using data up to each time point.  </li>
-<li><strong><code>normest.py</code></strong> – Implements normal (all timepoints at once) parameter estimation. This approach fits the entire time-series data in one step.  </li>
-<li><strong><code>adapest.py</code></strong> – Provides adaptive estimation for profile generation. It uses data interpolation (via PCHIP) to generate a profile of parameter estimates over time.  </li>
-<li><strong><code>toggle.py</code></strong> – Offers a single function (<code>estimate_parameters</code>) to switch between sequential and normal estimation modes based on a mode flag.  </li>
+<li><strong><code>normest.py</code></strong> – Implements normal parameter estimation. This approach fits the entire time-series data in one step.</li>
+<li><strong><code>toggle.py</code></strong> – Offers a single function (<code>estimate_parameters</code>) to pipe normal estimation based on a mode flag.  </li>
 <li><strong><code>core.py</code></strong> – Integrates the estimation methods, handling data extraction, calling the appropriate estimation (via the toggle), ODE solution, error calculation, and plotting.</li>
 </ul>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Estimation Modes:</strong>  </li>
-<li><strong>Sequential Estimation:</strong> Parameters are estimated in a time-sequential manner, providing an evolving view of the fit.  </li>
-<li>
-<p><strong>Normal Estimation:</strong> A single estimation over all-time points gives a comprehensive fit to the entire data set.</p>
-</li>
-<li>
-<p><strong>Adaptive Profile Estimation:</strong><br />
-  Using interpolation and a weighted scheme, the module can generate time profiles of parameter estimates.</p>
-</li>
 <li>
 <p><strong>Bootstrapping:</strong><br />
   Bootstrapping can be enabled to assess the variability of the parameter estimates.</p>
@@ -803,9 +792,6 @@
 </ul>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="estimation-mode-toggle">Estimation Mode Toggle<a class="headerlink" href="#estimation-mode-toggle" title="Permanent link">&para;</a></h3>
-<p>The global constant <code>ESTIMATION_MODE</code> (set in your configuration) controls which estimation approach is used:
-- <code>"sequential"</code>: Uses the sequential estimation routine in <code>seqest.py</code>.
-- <code>"normal"</code>: Uses the normal estimation routine in <code>normest.py</code>.</p>
 <p>The function <code>estimate_parameters(mode, ...)</code> in <code>toggle.py</code> serves as the interface that selects the appropriate routine and returns:
 - <code>estimated_params</code>: A list of estimated parameter vectors.
 - <code>model_fits</code>: A list of tuples containing the ODE solution and fitted data.
