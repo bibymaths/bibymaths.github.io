@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-date: 2025-06-09
+date: 2025-05-09
 ---
 
 ### PBPK Model of Tirzepatide
