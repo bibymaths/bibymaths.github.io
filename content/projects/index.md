@@ -9,6 +9,10 @@ A Python package for analyzing phosphoproteomics data, including time-course ana
 [GitHub](https://github.com/bibymaths/phoskintime) | [Docs](https://bibymaths.github.io/phoskintime/) 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15351017.svg)](https://doi.org/10.5281/zenodo.15351017) 
+ 
+### SARS-CoV-2 lineage reconstruction
+Nextflow Pipeline for SARS-CoV-2 genome reconstruction using state-of-the-art bioinformatics tools.  
+[GitHub](https://github.com/bibymaths/nf-illumina2lineage) 
 
 ### SequenceAligner
 Accelerated sequence alignment using SIMD and MPI for scalable, distributed analysis.  
@@ -17,10 +21,6 @@ Accelerated sequence alignment using SIMD and MPI for scalable, distributed anal
 ### GRMAP
 A fast, multi-threaded genomic reads mapping and annotation pipeline written in Perl.  
 [GitHub](https://github.com/bibymaths/grmap)
-
-### SARS Genome Assembly
-Automated SARS-CoV-2 genome reconstruction using state-of-the-art bioinformatics tools.  
-[GitHub](https://github.com/bibymaths/sars_genome_assembly)
 
 ### Liver Prediction (LIHC)
 ML-based classification of liver cancer tissues with transcriptomic & epigenomic analysis.  
