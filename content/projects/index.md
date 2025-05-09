@@ -11,8 +11,11 @@ A Python package for analyzing phosphoproteomics data, including time-course ana
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15351017.svg)](https://doi.org/10.5281/zenodo.15351017) 
  
 ### SARS-CoV-2 lineage reconstruction
-Nextflow Pipeline for SARS-CoV-2 genome reconstruction using state-of-the-art bioinformatics tools.  
-[GitHub](https://github.com/bibymaths/nf-illumina2lineage) 
+Nextflow Pipeline for SARS-CoV-2 genome reconstruction using state-of-the-art bioinformatics tools.   
+
+[GitHub](https://github.com/bibymaths/nf-illumina2lineage) | [Docs](https://bibymaths.github.io/nf-illumina2lineage/)  
+ 
+[![DOI](https://zenodo.org/badge/697021623.svg)](https://doi.org/10.5281/zenodo.15376064)
 
 ### SequenceAligner
 Accelerated sequence alignment using SIMD and MPI for scalable, distributed analysis.  
