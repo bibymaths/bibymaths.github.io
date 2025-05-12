@@ -22,7 +22,7 @@ theme = "PaperMod"
 
 [params.profileMode]
   enabled = true
-  subtitle = "Bioinformatician who loves mathematics"
+  subtitle = "Bioinformatician with a deep passion for mathematics, driven by a commitment to solving complex biological questions through rigorous computational and mathematical approaches."
   imageUrl = "photo.png"
   imageTitle = "Abhinav Mishra"
   imageWidth = 250
@@ -85,11 +85,6 @@ theme = "PaperMod"
     name = "Photography"
     url = "/gallery/"
     weight = 7
-
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 8
 
   [[menu.main]]
     name = "BioBaes"
