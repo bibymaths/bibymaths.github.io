@@ -1,6 +1,6 @@
 ---
 title: "CV"
-date: 2025-05-09
+date: 2025-05-13
 ---
 
-You can view or download my full CV [here](https://bibymaths.github.io/files/AbhinavMishra2025.pdf).
+You can view [here](https://bibymaths.github.io/files/AbhinavMishraResume2025.pdf).
