@@ -2,7 +2,6 @@
 title: "Indian Struggle for Independence"
 date: 2025-08-13
 tags: ["independence", "history", "colonialism"]
-slug: "indian-struggle"
 draft: false
 --- 
 
