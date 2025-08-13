@@ -1,5 +1,5 @@
 baseURL = "https://bibymaths.github.io"
-uglyURLs = true
+uglyURLs = false
 languageCode = "en-us"
 title = ""
 theme = "PaperMod"
