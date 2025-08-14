@@ -1,6 +1,6 @@
 ---
 title: "Indian Struggle for Independence"
-date: 2025-08-14
+date: 2025-08-13
 tags: ["independence", "history", "colonialism"]
 draft: false
 ---
@@ -44,5 +44,4 @@ ethnocentric hub. The legal divorce isn’t really legal if we go back, but the 
 with lead, and iron.
 
 Emancipation by Churchill induced famine and starvation in the easternmost state of Bengal wouldn’t be possible if it
-wasn’t for the allied powers to put pressure on the axis. Money comes, and Money goes, but corpses remain underneath. 
-
+wasn’t for the allied powers to put pressure on the axis. Money comes, and Money goes, but corpses remain underneath.
