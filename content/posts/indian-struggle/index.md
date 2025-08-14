@@ -1,9 +1,9 @@
 ---
 title: "Indian Struggle for Independence"
-date: 2025-08-13
+date: 2025-08-14
 tags: ["independence", "history", "colonialism"]
 draft: false
---- 
+---
 
 The bittersweet feeling of 15th August 1947 is imbibed in my bone and flesh, reinforced throughout attending army
 school, validated after meeting people who truly believe the world has moved on and it’s a new age.

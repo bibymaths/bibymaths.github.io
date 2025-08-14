@@ -1,7 +1,7 @@
 baseURL = "https://bibymaths.github.io"
 uglyURLs = false
 languageCode = "en-us"
-title = "Abhinav Mishra"
+title = ""
 theme = "PaperMod"
 
 [markup]
@@ -11,7 +11,7 @@ theme = "PaperMod"
 
 [params]
   env = "production"
-  title = "Abhinav Mishra"
+  title = ""
   description = "Bioinformatician who loves mathematics"
   keywords = ["Bioinformatics", "Mathematics", "Abhinav Mishra"]
   defaultTheme = "auto"
@@ -25,7 +25,7 @@ theme = "PaperMod"
   enabled = true
   subtitle = "Bioinformatician with a deep passion for mathematics, driven by a commitment to solving complex biological questions through rigorous computational and mathematical approaches."
   imageUrl = "photo.png"
-  imageTitle = "Abhinav Mishra"
+  imageTitle = ""
   imageWidth = 250
   imageHeight = 250
   buttons = [
