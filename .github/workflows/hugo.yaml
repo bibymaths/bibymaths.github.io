@@ -56,7 +56,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --cleanDestinationDir \ 
+            --cleanDestinationDir \
             --buildFuture \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
