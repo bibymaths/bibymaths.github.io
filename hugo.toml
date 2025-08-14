@@ -1,7 +1,7 @@
 baseURL = "https://bibymaths.github.io"
 uglyURLs = false
 languageCode = "en-us"
-title = ""
+title = "Abhinav Mishra"
 theme = "PaperMod"
 
 [markup]
