@@ -23,7 +23,7 @@ theme = "PaperMod"
 
 [params.profileMode]
   enabled = true
-  subtitle = "Bioinformatician with a deep passion for mathematics, driven by a commitment to solving complex biological questions through rigorous computational and mathematical approaches."
+  subtitle = "Computational Biologist | Bridging Biology, Data, and Software | Open Science & Applied Solutions"
   imageUrl = "photo.png"
   imageTitle = ""
   imageWidth = 250
@@ -63,8 +63,8 @@ theme = "PaperMod"
     weight = 2
 
   [[menu.main]]
-    name = "CV"
-    url = "/cv/"
+    name = "Portfolio"
+    url = "/portfolio/"
     weight = 3
 
   [[menu.main]]
@@ -73,7 +73,7 @@ theme = "PaperMod"
     weight = 4
 
   [[menu.main]]
-    name = "Talks & Presentations"
+    name = "Presentations & Posters"
     url = "/presentations/"
     weight = 5
 
