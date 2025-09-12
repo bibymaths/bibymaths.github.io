@@ -1,9 +1,15 @@
 ---
 title: "About"
-date: 2025-05-11
+date: 2025-09-12
 ---
 
-Hi, I’m Abhinav Mishra — a bioinformatician motivated by mathematics and programming to transform biological complexity into computationally tractable problems. My research spans optimization, network-based analysis, and pharmacokinetics, with a focus on cancer systems biology.
+<p style="font-size:18px; font-weight:500; margin:0;">
+  Hi there
+  <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f44b.svg"
+       alt="waving hand" class="wave-hand" height="22" style="vertical-align:middle;">
+</p>
+
+I’m a bioinformatician motivated by mathematics and programming to transform biological complexity into computationally tractable problems. My research spans optimization, network-based analysis, and pharmacokinetics, with a focus on cancer systems biology.
 
 I specialize in integrating multi-omics data and building optimization-driven models that link molecular networks to drug responses. To make this work scalable and reproducible, I develop open-source pipelines using HPC, containerization, and workflow systems.
 

@@ -23,7 +23,7 @@ theme = "PaperMod"
 
 [params.profileMode]
   enabled = true
-  subtitle = "Computational Biologist | Bridging Biology, Data, and Software | Open Science & Applied Solutions"
+  subtitle = "<p style='font-size:1.35rem; font-weight:500; color:#444; line-height:1.4; margin:0;'>Computational Biologist • Data & Software • Open Science</p>"
   imageUrl = "photo.png"
   imageTitle = ""
   imageWidth = 250
@@ -34,6 +34,11 @@ theme = "PaperMod"
 
 [params.assets]
   customCSS = ["css/extended/custom.css"]
+  favicon = "/files/favicon.ico"
+  favicon16 = "/files/logo_16x16.png"
+  favicon32 = "/files/logo_32x32.png"
+  apple_touch_icon = "/files/logo_128x128.png"
+  safari_pinned_tab = "/files/logo.svg"
 
 [[params.socialIcons]]
   name = "github"

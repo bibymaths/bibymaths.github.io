@@ -1,13 +1,11 @@
 ---
-title: "CV"
-date: 2025-05-13
+title: "Portfolio"
+date: 2025-09-12
 ---
 
 # Abhinav Mishra
 
-**MSc Bioinformatics | Computational Biologist | Open Science Developer**
-
-You can view my complete CV as PDF [here](https://bibymaths.github.io/files/AbhinavMishr_CV.pdf).
+You can view my complete CV as PDF [here](https://bibymaths.github.io/files/AbhinavMishra_CV.pdf).
 
 ---
 
@@ -69,7 +67,9 @@ See [Projects](https://bibymaths.github.io/projects/) for details.
   Non-profit community for bioinformatics enthusiasts. Focused on mentoring, open knowledge, and creating accessible opportunities.
 
 - **Member**, International Society for Computational Biology (ISCB) — *1 year*
- 
+  
+--- 
+
 ## My Technical Toolkit
 
 ### Development Environment
