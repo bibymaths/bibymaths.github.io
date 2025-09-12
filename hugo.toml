@@ -23,7 +23,7 @@ theme = "PaperMod"
 
 [params.profileMode]
   enabled = true
-  subtitle = "<p style='font-size:1.35rem; font-weight:500; color:#444; line-height:1.4; margin:0;'>Computational Biologist • Data & Software • Open Science</p>"
+  subtitle = "<p style='font-size:1.35rem; font-weight:700; line-height:1.4; margin:0;'>Computational Biologist • Data & Software • Open Science</p>"
   imageUrl = "photo.png"
   imageTitle = ""
   imageWidth = 250
