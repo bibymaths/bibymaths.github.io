@@ -1,4 +1,12 @@
+/* Zenodo badges */
 img[src*="zenodo.org/badge"] {
+  height: 20px;
+  vertical-align: middle;
+  display: inline !important;
+}
+
+/* Shields.io badges (DOI) */
+img[src*="img.shields.io"] {
   height: 20px;
   vertical-align: middle;
   display: inline !important;

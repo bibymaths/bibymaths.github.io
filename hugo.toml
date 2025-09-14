@@ -3,6 +3,7 @@ uglyURLs = false
 languageCode = "en-us"
 title = ""
 theme = "PaperMod"
+copyright = "2025 © Abhinav Mishra"
 
 [markup]
   [markup.goldmark]
@@ -19,7 +20,10 @@ theme = "PaperMod"
   ShowReadingTime = false
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
-  ShowWordCount = true
+  ShowShareButtons = true
+  ShowWordCount = false
+  hideFooter = false
+  UseHugoToc = false
 
 [params.profileMode]
   enabled = true
