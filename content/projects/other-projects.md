@@ -1,6 +1,5 @@
 ---
-title: ""
-date: 2025-11-09
+title: "More Projects"
 categories: ["Projects"]
 draft: false 
 hideSummary: true

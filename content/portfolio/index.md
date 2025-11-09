@@ -13,11 +13,11 @@ You can view my complete CV as PDF [here](https://bibymaths.github.io/files/Abhi
 
 - **Master of Science, Bioinformatics**  
   Freie Universität Berlin, Germany — *2025*  
-  Thesis: *Mathematical Optimization of Signalling Networks in Triple Negative Breast Cancer Cell Lines* [Link](https://doi.org/10.5281/zenodo.17290716) 
+  Thesis: *Mathematical Optimization of Signalling Networks in Triple Negative Breast Cancer Cell Lines* [[Link]](https://doi.org/10.5281/zenodo.17290716) 
 
 - **Bachelor of Technology, Bioinformatics**  
   Jaypee University of Information Technology, India — *2017*  
-  Thesis: *Identification of Potent Biomarkers for Prostate Cancer Through AR, MAPK, and mTOR Signalling Pathway Mining* [Link](https://github.com/bibymaths/bachelor_thesis)
+  Thesis: *Identification of Potent Biomarkers for Prostate Cancer Through AR, MAPK, and mTOR Signalling Pathway Mining* [[Link]](https://github.com/bibymaths/bachelor_thesis)
 
 ---
 
