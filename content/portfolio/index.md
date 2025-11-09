@@ -13,11 +13,11 @@ You can view my complete CV as PDF [here](https://bibymaths.github.io/files/Abhi
 
 - **Master of Science, Bioinformatics**  
   Freie Universität Berlin, Germany — *2025*  
-  Thesis: *Mathematical Optimization of Signalling Networks in Triple Negative Breast Cancer Cell Lines*
+  Thesis: *Mathematical Optimization of Signalling Networks in Triple Negative Breast Cancer Cell Lines* [Link](https://doi.org/10.5281/zenodo.17290716) 
 
 - **Bachelor of Technology, Bioinformatics**  
   Jaypee University of Information Technology, India — *2017*  
-  Thesis: *Identification of Potent Biomarkers for Prostate Cancer Through AR, MAPK, and mTOR Signalling Pathway Mining*
+  Thesis: *Identification of Potent Biomarkers for Prostate Cancer Through AR, MAPK, and mTOR Signalling Pathway Mining* [Link](https://github.com/bibymaths/bachelor_thesis)
 
 ---
 
@@ -49,8 +49,8 @@ See [Projects](https://bibymaths.github.io/projects/) for details.
 
 ## Publications
 
-- Mishra, A. & König, M. *Physiologically Based Pharmacokinetic (PBPK) Model of Tirzepatide.* Zenodo, 2025. [DOI](https://doi.org/10.5281/zenodo.14984688)  
-- Asati, N., Mishra, A., Shukla, A., Singh, T. *Gene Expression Studies to Identify Significant Genes in AR, MTOR, MAPK Pathways and their Overlapping Regulatory Role in Prostate Cancer.* J. Integrative Bioinformatics, 16(3), 2019. [DOI](https://doi.org/10.1515/jib-2018-0080)
+- **Mishra, A.** & König, M. *Physiologically Based Pharmacokinetic (PBPK) Model of Tirzepatide.* Zenodo, 2025. [DOI](https://doi.org/10.5281/zenodo.14984688)  
+- Asati, N., **Mishra, A.**, Shukla, A., Singh, T. *Gene Expression Studies to Identify Significant Genes in AR, MTOR, MAPK Pathways and their Overlapping Regulatory Role in Prostate Cancer.* J. Integrative Bioinformatics, 16(3), 2019. [DOI](https://doi.org/10.1515/jib-2018-0080)
 
 ---
 

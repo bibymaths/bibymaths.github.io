@@ -26,6 +26,13 @@ A conference poster presented by **Abhinav Mishra** & Nimisha Asati at the **16t
  
 <embed src="/images/posters/ifa2023.pdf" type="application/pdf" width="100%" height="1050px" /> 
 
-A technical poster presented at **IFA 2023 (FU Berlin)** by **Abhinav Mishra**, Jule Brenningmeyer, and Maike Herkenrath under the **Department of Mathematics & Informatics**, explaining the **FM-Index** data structure for efficient **exact and approximate sequence search** using the **Burrows–Wheeler Transform**, **C-array**, and **Occ matrix**, and exploring **L-to-F mapping**, **backward search**, and **error-tolerant backtracking** with **bidirectional indices** and **pigeonhole search strategies**.
+A technical poster presented during module **Introduction to Focus Areas 2023 (FU Berlin)** by **Abhinav Mishra**, Jule Brenningmeyer, and Maike Herkenrath under the **Department of Mathematics & Informatics**, explaining the **FM-Index** data structure for efficient **exact and approximate sequence search** using the **Burrows–Wheeler Transform**, **C-array**, and **Occ matrix**, and exploring **L-to-F mapping**, **backward search**, and **error-tolerant backtracking** with **bidirectional indices** and **pigeonhole search strategies**.
 
-[GitHub](https://github.com/bibymaths/IFA-2022)
+[GitHub](https://github.com/bibymaths/IFA-2022) | [Report](https://bibymaths.github.io/files/Advanced_Algorithms_IFA_2023.pdf)
+
+Here are reports from **Data Science in Life Sciences** & **Complex Systems in Bioinformatics** courses:
+
+- [Complex Systems Report (IFA 2023)](https://bibymaths.github.io/files/Complex_Systems_IFA_2023.pdf)
+- [Data Science Report (IFA 2023)](https://bibymaths.github.io/files/Data_Science_IFA_2023.pdf)
+
+
