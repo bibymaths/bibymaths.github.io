@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: ""
 date: 2025-09-12
 ---
 

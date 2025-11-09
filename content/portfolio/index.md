@@ -1,5 +1,5 @@
 ---
-title: "Portfolio"
+title: ""
 date: 2025-09-12
 ---
 

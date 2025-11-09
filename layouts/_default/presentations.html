@@ -1,26 +1,57 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<p>{{ .Content }}</p>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-  {{ $files := readDir "static/presentations" }}
-  {{ range $files }}
-    {{ $name := .Name }}
-    {{ $ext := lower (delimit (last 1 (split .Name ".")) "") }}
-    {{ $base := replaceRE "\\..+$" "" $name }}
-    {{ $title := replace $base "-" " " | title }}
-    <div style="text-align: center; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-      <h3>{{ $title }}</h3>
-
-      {{ if eq $ext "pdf" }}
-        <embed src="/presentations/{{ $name }}#toolbar=0" type="application/pdf" width="100%" height="400px" style="border-radius: 6px;" />
-        <p><a href="/presentations/{{ $name }}" download>📥 Download PDF</a></p>
-      {{ else if eq $ext "pptx" }}
-        <p>📊 <a href="/presentations/{{ $name }}" download>Download Presentation</a></p>
-      {{ else }}
-        <p>📎 <a href="/presentations/{{ $name }}" download>Download File</a></p>
-      {{ end }}
+<main class="page presentations-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    <div class="page-intro">
+      {{ .Content }}
     </div>
+  </header>
+
+  {{ $files := readDir "static/presentations" }}
+
+  {{ if $files }}
+    <section class="presentations-grid">
+      {{ range sort $files "Name" "asc" }}
+        {{ $name := .Name }}
+        {{ $ext := lower (delimit (last 1 (split .Name ".")) "") }}
+        {{ $base := replaceRE "\\..+$" "" $name }}
+        {{ $title := replace $base "-" " " | title }}
+
+        <article class="presentation-card">
+          <header class="presentation-header">
+            <h2 class="presentation-title">{{ $title }}</h2>
+<!--            <span class="presentation-badge">{{ upper $ext }}</span>-->
+          </header>
+
+          <div class="presentation-preview">
+            {{ if eq $ext "pdf" }}
+              <object
+                data="/presentations/{{ $name }}#toolbar=0"
+                type="application/pdf"
+                class="presentation-embed"
+              >
+                <p>
+                  Preview not available.
+                  <a href="/presentations/{{ $name }}">Open PDF</a>
+                </p>
+              </object>
+            {{ else if eq $ext "pptx" }}
+              <p>📊 PowerPoint presentation</p>
+            {{ else }}
+              <p>📎 File download</p>
+            {{ end }}
+          </div>
+
+          <footer class="presentation-footer">
+            <a href="/presentations/{{ $name }}" download class="btn btn-secondary">
+              📥 Download
+            </a>
+          </footer>
+        </article>
+      {{ end }}
+    </section>
+  {{ else }}
+    <p>No presentations available yet.</p>
   {{ end }}
-</div>
+</main>
 {{ end }}

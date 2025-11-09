@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: ""
 date: 2025-09-14
 ---
 
