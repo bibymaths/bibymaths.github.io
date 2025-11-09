@@ -82,9 +82,14 @@ copyright = "2025 © Abhinav Mishra"
     weight = 4
 
   [[menu.main]]
-    name = "Presentations & Posters"
+    name = "Presentations"
     url = "/presentations/"
     weight = 5
+
+  [[menu.main]]
+    name = "Posters"
+    url = "/posters/"
+    weight = 6
 
 #  [[menu.main]]
 #    name = "Posts"
