@@ -1,12 +1,12 @@
 ---
 title: ""
-date: 2025-09-14
+date: 2025-12-10
 ---
 
 ### PhosKinTime  
-Python package for analyzing proteomics data, including time-course modelling and visualization.  
+Python package for analyzing proteomics data, including time-course modelling and visualization.
 
-[GitHub](https://github.com/bibymaths/phoskintime)&nbsp;|&nbsp;[Docs](https://bibymaths.github.io/phoskintime/)&nbsp;|&nbsp;<a href="https://doi.org/10.5281/zenodo.15351017"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.15351017.svg" height="20" /></a>
+[PyPI](https://pypi.org/project/phoskintime/)&nbsp;|&nbsp;|[GitHub](https://github.com/bibymaths/phoskintime)&nbsp;|&nbsp;[Docs](https://bibymaths.github.io/phoskintime/)&nbsp;|&nbsp;<a href="https://doi.org/10.5281/zenodo.15351017"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.15351017.svg" height="20" /></a>
   
 ---  
 
@@ -56,5 +56,29 @@ ML-based classification of liver cancer tissues with transcriptomic & epigenomic
 Identifying potent biomarkers for prostate cancer through pathway mining and gene-expression meta-analysis.   
 
 [GitHub](https://github.com/bibymaths/bachelor_thesis) | [![DOI](https://img.shields.io/badge/DOI-10.1515%2Fjib--2018--0080-blue)](https://doi.org/10.1515/jib-2018-0080)
+
+---
+
+### Hsp90 smFRET Analysis Pipeline
+
+Single-molecule FRET kinetic modelling with multistart optimisation, bootstrapping, and sensitivity analysis.
+
+[GitHub](https://github.com/bibymaths/hsp90-smFRET-model)
+
+---
+
+### PyNetPhorest
+
+Modern Python re-implementation of NetPhorest for kinase–substrate scoring and phosphorylation crosstalk analysis.
+
+[PyPI](https://pypi.org/project/pynetphorest/) |[GitHub](https://github.com/bibymaths/pynetphorest) | <a href="https://doi.org/10.5281/zenodo.17784008"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17784008.svg" height="20" /></a>
+
+---
+
+### CasTuner (Python Port)
+
+Reproducible modelling of CRISPR/Cas-based repression–derepression gene-tuning dynamics.
+
+[GitHub](https://github.com/bibymaths/CasTuner)
 
 ---
